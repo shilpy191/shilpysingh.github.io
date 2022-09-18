@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    <title>My portfolio - Shilpy Singh</title>
+    <style>
+        #pic {
+            height: 50px;
+            border-radius: 30px;
+        }
+
+        #home {
+            margin-top: 100px;
+            height: auto;
+            width: 100%;
+        }
+
+        h1 {
+            font-family: Comic Sans MS;
+        }
+
+        h3 {
+            font-family: Comic Sans MS;
+        }
+
+        p {
+            font-family: Comic Sans MS;
+        }
+
+        img.about {
+            width: 250px;
+            height: 300px;
+            border: 2px;
+            border-radius: 120px;
+        }
+
+        .description {
+            margin-top: 200px;
+        }
+
+        .portfolio-btn {
+            width: 150px;
+            height: 44px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFFFFF;
+            background-color: #1db096;
+            border-radius: 20px;
+            box-shadow: 4px 10px 30px rgba(24, 139, 119, 0.2);
+            text-decoration: none;
+        }
+
+        .portbutton {
+            float: left;
+        }
+
+        .portbuttonn {
+            float: right;
+        }
+
+        #skills {
+            margin-top: 200px;
+            width: 100%;
+            height: auto;
+        }
+
+        #recent {
+            margin-top: 150px;
+            width: 100%;
+            height: auto;
+        }
+
+        #project {
+            margin-top: 100px;
+            width: 100%;
+            height: auto;
+        }
+
+        #contact {
+            bottom: 0px;
+            width: 100%;
+            height: auto;
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 100%;
+            height: 500px;
+            transition: .5s ease;
+            backface-visibility: hidden;
+            border: 2px;
+            border-radius: 700px;
+        }
+
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%)
+        }
+
+        .container-sm:hover .image {
+            opacity: 0.3;
+        }
+
+        .container-sm:hover .middle {
+            opacity: 1;
+        }
+
+        .text {
+            background-color: lightblue;
+            color: white;
+            font-size: 16px;
+            padding: 16px 32px;
+            border: 2px;
+            border-radius: 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: black;
+        }
+
+
+        div.chu {
+            width: 100%;
+            height: auto;
+        }
+
+        #div1 {
+            margin-left: 6px;
+            padding: 2px;
+            transition-timing-function: linear;
+            width: 48%;
+            height: 410px;
+            float: left;
+            background-color: chartreuse;
+            border-radius: 5px;
+            border: black;
+            border: 1px;
+            box-shadow: 10px 10px 10px;
+        }
+
+        #div2 {
+            padding: 2px;
+            margin-right: 6px;
+            transition-timing-function: ease;
+            width: 48%;
+            height: 410px;
+            float: right;
+            background-color: chocolate;
+            border-radius: 5px;
+            border: black;
+            border: 1px;
+            box-shadow: 10px 10px 10px;
+        }
+
+        #left {
+            float: left;
+            width: 33.3%;
+            background-color: lightblue;
+            height: 250px;
+        }
+
+        #center {
+            float: left;
+            width: 33.3%;
+            background-color: lightblue;
+            height: 250px;
+        }
+
+        #right {
+            float: left;
+            width: 33.3%;
+            background-color: lightblue;
+            height: 250px;
+        }
+
+        .footer {
+            bottom: 0;
+            width: 100%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <img src="shilpi.jpeg" id="pic">
+
+            <a class="navbar-brand" href="index.html">Shilpy Singh</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#recent">Recent</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <section class="description">
+        <div class="container-lg">
+            <img src="mypic.jpeg" class="about" alt="SRIVASTAV kitchen" align="left">
+        </div>
+        <div class="container-lg">
+            <h1 align="center">Hello, I am Shilpy Singh</h1>
+            <p align="center">I have UI/UX Designing skills and made multiple projects using my different
+                skill " Adobe xd, Adobe Photoshop, Figma " that makes me a confident person about my skill. I also do have a working experience on my projects as their UI/UX Designer. I am a very fast learner and willing to
+                learn technology always
+                which make me a best learner and proud. Now I want to work in the company to explore my skill on real
+                world project and learn new technologies</P>
+            <br>
+            <br>
+            <div class="portbutton">
+                <a href="index.html" class="portfolio-btn">SEE MY PORTFOLIO</a>
+            </div>
+            <div class="portbuttonn">
+                <a href="tel:+91 7857838588" class="portfolio-btn">HIRE ME</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="skills">
+        <div class="container-sm">
+            <img src="skill.jpg" height="400px" align="right">
+        </div>
+        <div class="container-sm">
+            <h3 align="center">MY SKILLS:-</h3>
+
+            <p align="center">Adobe XD<br>
+                I am fresher in Adobe XD and I did a project with this skill.</p>
+
+            <p align="center">Adobe Photoshop<br>
+                I am fresher in Adobe Photoshop and I did a project with this skill.</p>
+
+            <p align="center">Figma<br>
+                I am fresher in Figma and I did a project with this skill.</p>
+
+        </div>
+    </section>
+
+    <section id="recent">
+        <h1 align="center"> Recent project Design:-</h1>
+        <br>
+        <br>
+        <div class="container-sm">
+            <img src="netflix.jpeg" alt="Avatar" class="image" style="width:100%">
+        </div>
+    </section>
+
+    <section id="project">
+        <h1 align="center">PROJECTS:-</h1>
+        <br>
+        <div class="chu">
+            <div id="div1">
+                <img src="recent.jpeg" width="100%">
+                <p align="center">This is a Netflix front page design that can be adjusted on any screen. This has
+                    function with menu links and made by the skill: " Abobe xd "</p>
+            </div>
+            <div id="div2">
+                <img src="project.jpeg" width="100%">
+                <p align="center">This is a google pay front page and the name is " Google pay " ,that can be
+                    adjust
+                    itself by the screen uisng the "Adobe XD".</p>
+            </div>
+        </div>
+    </section>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+
+    
+    <section id="contact">
+        <br>
+        <br>
+        <h2 align='center'>
+            <legend> <u>CONTACT ME</u> </legend>
+        </h2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <form id="contact-form" method="post"
+            action="mailto:shilpy191@gmail.com? subject = ORDER&body = MOBILE NO. ADDRESS">
+            <fieldset align='center'>
+                <label> FIRST NAME: </label> <br><BR>
+                <input type="text" name="FIRST NAME"><br><BR>
+
+                <label> LAST NAME: </label> <br><BR>
+                <input type="text" name="LAST NAME"><br><BR>
+
+                <label> EMAIL ID: </label> <br><BR>
+                <input type="email" name="EMAIL"><br><BR>
+
+                <label> MOBILE NO.: </label> <br><BR>
+                <input type="text" name="MOBILE NO." placeholder="ENTER MOBILE NUMBER"><br><BR><br>
+
+                <label> MESSAGE FOR ME </label> <br><BR>
+                <input type="text" name="REVIEWS" placeholder="TYPE YOUR MESSAGE"><br><BR><br>
+
+                <input type="submit" name="submit">
+                <input type="reset" name="reset">
+            </fieldset>
+        </form>
+    </section>
+
+
+
+    <br>
+    <br>
+    <br>
+    <div class="footer">
+        <div class="conatiner-sm" id="left">
+            <h2 align="center">Shilpy Singh</h2>
+            <p align="center">Hsr layout, Near Silk Board,
+                <br>BANGALORE, KARNATAKA
+            </p>
+            <BR>
+            <p align="center">PIN CODE-560065</p>
+        </div>
+
+        <div class="conatiner-sm" id="center">
+            <h2 align="center">QUICK LINKS:-</h2>
+            <ul>
+                <li href="#"><a href="index.html">HOME</a></li>
+                <li href="#"><a href="#skills">SKILLS</a></li>
+                <li href="#"><a href="#recent">RECENT</a></li>
+                <li href="#"><a href="#project">PROJECTS</a></li>
+                <li href="#"><a href="#contact">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="conatiner-sm" id="right">
+            <H5 align="center">ACCOUNTS:-
+                <a href="mailto:shilpy191@gmail.com"><img src="Gicon.jpg" height="40px" width="40px"></a>
+            </H5>
+            <br>
+            <h5 align="center">CONTACT NO.:-
+                <br><br> <a href="tel:+91 7857838588">7857838588</a>
+            </h5>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
